@@ -15,7 +15,7 @@ public class StringUtils {
      * @return A sorted Collection from a String with space or comma separated values
      */
     public static Collection<String> getStopWordsCollection(String stopWords) {
-        Set<String> stopWordsSet = new TreeSet<String>();
+        Set<String> stopWordsSet = new TreeSet<>();
         StringTokenizer st = new StringTokenizer(stopWords, ", ");
         while (st.hasMoreTokens()) {
             stopWordsSet.add(st.nextToken());
@@ -32,7 +32,7 @@ public class StringUtils {
      */
     public static String sortDelimitedString(String delimitedStr, String delimiter, String newDelimiter) {
         StringTokenizer st = new StringTokenizer(delimitedStr, delimiter);
-        TreeSet<String> set = new TreeSet<String>();
+        TreeSet<String> set = new TreeSet<>();
         while (st.hasMoreTokens()) {
             set.add(st.nextToken());
         }
@@ -59,7 +59,7 @@ public class StringUtils {
      */
     public static String deduplicateTokens(String[] keywords) {
         StringTokenizer st;
-        Set<String> words = new TreeSet<String>();
+        Set<String> words = new TreeSet<>();
         for (String kw : keywords) {
             st = new StringTokenizer(kw, "+ ");
             while (st.hasMoreTokens()) {
@@ -79,7 +79,7 @@ public class StringUtils {
      */
     public static String joinTokens(String[] keywords) {
         StringTokenizer st;
-        List<String> words = new ArrayList<String>();
+        List<String> words = new ArrayList<>();
         for (String kw : keywords) {
             st = new StringTokenizer(kw, "+ ");
             while (st.hasMoreTokens()) {
@@ -118,7 +118,7 @@ public class StringUtils {
      */
     public static String deduplicateTokens(String keyword) {
         StringTokenizer st;
-        Set<String> words = new TreeSet<String>();
+        Set<String> words = new TreeSet<>();
         st = new StringTokenizer(keyword, "+ ");
         while (st.hasMoreTokens()) {
             words.add(st.nextToken().toLowerCase());
