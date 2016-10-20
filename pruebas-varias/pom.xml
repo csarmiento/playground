@@ -104,6 +104,13 @@
             <scope>provided</scope>
         </dependency>
 
+        <!-- Google Guava -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>19.0</version>
+        </dependency>
+
         <!-- Test scope dependencies -->
         <dependency>
             <groupId>junit</groupId>
