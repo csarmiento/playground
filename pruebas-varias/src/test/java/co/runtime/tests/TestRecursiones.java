@@ -6,7 +6,8 @@ import junit.framework.TestCase;
 import co.runtime.clustering.Recursiones;
 
 /**
- * Created by camilosarmiento on 5/21/14.
+ * @author Camilo Sarmiento
+ * @since 2016-10-21
  */
 public class TestRecursiones extends TestCase {
     public void testPosiblesCambios() {
